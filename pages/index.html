@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog-box</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+      <!-- Open Button -->
+  <button class="open-btn" onclick="openModal()">Give Feedback</button>
+  <!-- Overlay Modal -->
+  <div id="overlay">
+    <div class="modal">
+      <img src="../icons/hands-holding-signs.png" class="close-btn" onclick="closeModal()" alt="Close">
+      <h2>Feedback Form</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <select required>
+          <option value="">Rate Us</option>
+          <option value="5">Excellent</option>
+          <option value="4">Good</option>
+          <option value="3"> Average</option>
+          <option value="2"> Poor</option>
+          <option value="1">Very Bad</option>
+        </select>
+        <textarea rows="4" placeholder="Your Feedback..." required></textarea>
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </div>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>
